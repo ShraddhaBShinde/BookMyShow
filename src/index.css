@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.rec-dot_active {
+    background-color: #FF0000 !important;
+    box-shadow: 0 0 1px 3px whitesmoke !important;
+}
+
+.rec-dot:focus,
+.rec-dot:hover {
+    box-shadow: 0 0 1px 3px #FF0000 !important;
+}
+
+.rec-dot_active:focus,
+.rec-dot_active:hover {
+    background-color: #CE1212 !important;
+    box-shadow: 0 0 1px 3px whitesmoke !important;
+}
+
+.rec-arrow {
+    background-color: #FF0000 !important;
+    transition: all 0.3s ease;
+    font-size: 1.1rem !important;
+    color: whitesmoke !important;
+    width: 1.7rem !important;
+    height: 1.7rem !important;
+    min-width: 1.7rem !important;
+    line-height: 1.7rem !important;
+}
+
+
+/* hide disabled buttons */
+
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
+
+.rec-arrow:hover:not(:disabled) {
+    transform: scale(1.2);
+}

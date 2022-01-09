@@ -40,8 +40,8 @@ const Premier = () => {
     return (
         <>
         <div className="flex flex-col items-start gap-1 py-2">
-          <h3 className="text-white text-xl font-bold pl-12">Premieres</h3>
-          <p className="text-white text-sm pl-12">Brand New releases every friday</p>
+          <h3 className="text-white text-2xl font-bold pl-12">Premieres</h3>
+          <p className="text-white text-xl pl-12">Brand New releases every friday</p>
         </div>
           <Carousel itemPosition={consts.BETWEEN} itemsToShow={4} >
               {PremierImages.map((image)=>(

@@ -1,16 +1,18 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Carousel from 'react-elastic-carousel';
+import axios from "axios";
 
 
 const HeroCarousal = () => {
+    const [images, setImages] = useState([]);
+    useEffect(()=> {
+        const requestNowPlayingMovies = async() => {
+            const getImages = await axios.get("/movie/now_playing");
+            console.log(getImages);
+        };
+        requestNowPlayingMovies();
+    },[]);
     
-const images = ["https://in.bmscdn.com/promotions/cms/creatives/1641474877783_sister.jpg",
-"https://in.bmscdn.com/promotions/cms/creatives/1641361864902_vir.jpg",
-"https://in.bmscdn.com/promotions/cms/creatives/1641191175860_devesh.jpg",
-"https://in.bmscdn.com/promotions/cms/creatives/1641388416369_12x3.jpg",
-"https://in.bmscdn.com/promotions/cms/creatives/1640939086610_banner.1.jpg",
-"https://in.bmscdn.com/promotions/cms/creatives/1641447175390_web03.png"
-];
       return (
           <>
           <Carousel>

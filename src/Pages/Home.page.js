@@ -10,7 +10,7 @@ const HomePage = () => {
         <div className="flex flex-col gap-5 pt-5 ">
 
         <div className="container mx-auto px-15">
-        <h1 className="text-xl pl-12 font-bold">The Best of Entertainment</h1>
+        <h1 className="text-2xl pl-12 font-bold">The Best of Entertainment</h1>
         <EntertainmentCardSlider />
         </div>
 

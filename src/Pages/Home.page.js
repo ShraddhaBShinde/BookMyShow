@@ -33,8 +33,8 @@ const HomePage = () => {
                 className="w-full h-full"
                 />
             </div>
-            <div className="mx-auto container">
-            <Premier />
+            <div className="mx-auto px-32 container">
+                <Premier  PremierImages={popularMovies}/>
             </div>
         </div>
 

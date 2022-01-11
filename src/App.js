@@ -1,5 +1,4 @@
 import React from 'react'
-import {BrowserRouter} from "react-router-dom";  //browser router
 import axios from "axios";
 
 //HOC
@@ -18,11 +17,9 @@ axios.defaults.params["api_key"]=process.env.REACT_APP_API_KEY;
 function App() {
   return (
     <>
-      <BrowserRouter>
       <DefaultHoc path ="/" exact component={HomePage}/>
       <MovieHOC path ="/movie/:id" exact component={Movie}/> 
       <h1 className="text-green-500">Hello world!</h1>
-    </BrowserRouter>
     </>
   );
 }

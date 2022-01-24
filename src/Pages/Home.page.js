@@ -4,6 +4,8 @@ import axios from "axios";
 //components
 import EntertainmentCardSlider from "../components/Entertainment/Entertainmentcard.component";
 import Premier from "../components/Premier/Premier.component";
+import EventCardSlider from "../components/Entertainment/Eventsnearyou.component";
+import OnlineEventCardSlider from "../components/Entertainment/Onlineevents.component";
 
 const HomePage = () => {
     const [popularMovies, setPopularMovies] = useState([]);
@@ -34,11 +36,22 @@ const HomePage = () => {
                 />
             </div>
             <div className="mx-auto px-32 container">
-                <Premier  PremierImages={popularMovies}/>
+                <Premier  />
             </div>
         </div>
 
+        <div className="container mx-auto px-15 pb-10">
+        <h1 className="text-2xl pl-12 font-bold">Events Happening Near You</h1>
+        <EventCardSlider />
         </div>
+
+        <div className="container mx-auto px-15">
+        <h1 className="text-2xl pl-12 font-bold">Online Streaming Events</h1>
+        <OnlineEventCardSlider />
+        </div>
+
+        </div>
+        
         </>
     );
 };

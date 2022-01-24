@@ -1,11 +1,12 @@
 import React from "react";
 
 const Poster = (props) => {
+  
     return (
         <>
         <div className="w-full h-full">
         <div className="w-15 h-30 p-4">
-        <img src={`https://image.tmdb.org/t/p/original${props.poster_path}`} className="w-full h-full rounded-xl"/>
+        <img src={props.src} className="w-full h-full rounded-xl"/>
        </div>
 
        <h3
@@ -13,7 +14,7 @@ const Poster = (props) => {
           props.isDark ? "text-white" : "text-gray-800"
         }`}
        >
-        {props.original_title}
+        {props.title}
        </h3>
 
        <p
@@ -21,7 +22,7 @@ const Poster = (props) => {
          props.isDark ? "text-white" : "text-gray-700"
        }`}
        >
-           {props.original_language}
+           {props.subtitle}
        </p>
         </div>
         </>

@@ -21,7 +21,7 @@ const NavLg = () => {
         <>
         <div className="flex justify-between gap-5 w-full">
             <div className="flex justify-between pl-5 h-10">
-                <img src={IMAGES.bmslogo} alt="logo" />
+            <h1 className="text-white text-xl mt-1">book</h1><img src={IMAGES.bmslogo} alt="logo" /><h1 className="text-white text-xl mt-1">show</h1>
             </div>
                 <div className="w-4/6 flex gap-3 items-center bg-white px-3 py-2 rounded-md">
                 <BiSearch />

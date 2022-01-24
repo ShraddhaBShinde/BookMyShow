@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import axios from "axios";
+
 
 //HOC
 import DefaultHoc from './HOC/Default.HOC';
